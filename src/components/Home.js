@@ -6,7 +6,10 @@ const Home = () => {
   return (
     <>
       <div>Home</div>
-      <button onClick={() => navigate('order-summary')}>Place order</button>
+
+      <button onClick={() => navigate('order-summary', { replace: true })}>
+        Place order
+      </button>
     </>
   );
 };
